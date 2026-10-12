@@ -3,6 +3,7 @@
 
   // ---- Settings: set the WhatsApp number (international format, digits only, e.g. 9665XXXXXXXX) ----
   var CONFIG = { whatsapp: '966504779551' };
+  var EN = window.ISTIQDAM_LANG === 'en';
 
   // Mobile menu
   var toggle = document.querySelector('.nav-toggle');
@@ -35,8 +36,9 @@
     tab.addEventListener('click', function () { select(tab); });
     tab.addEventListener('keydown', function (e) {
       var next = null;
-      if (e.key === 'ArrowLeft') next = tabs[(i + 1) % tabs.length];
-      if (e.key === 'ArrowRight') next = tabs[(i - 1 + tabs.length) % tabs.length];
+      var fwd = EN ? 'ArrowRight' : 'ArrowLeft', back = EN ? 'ArrowLeft' : 'ArrowRight';
+      if (e.key === fwd) next = tabs[(i + 1) % tabs.length];
+      if (e.key === back) next = tabs[(i - 1 + tabs.length) % tabs.length];
       if (next) { e.preventDefault(); select(next); next.focus(); }
     });
   });
@@ -96,18 +98,25 @@
         f[k].setAttribute('aria-invalid', empty ? 'true' : 'false');
         if (empty) bad = true;
       });
-      if (bad) { say('أكمل اسم المكتب واسمك ورقم الجوال.', true); return; }
+      if (bad) { say(EN ? 'Please fill in the office name, your name and mobile number.' : 'أكمل اسم المكتب واسمك ورقم الجوال.', true); return; }
       var digits = f.phone.value.replace(/[^\d+]/g, '');
       if (digits.replace(/\D/g, '').length < 9) {
         f.phone.setAttribute('aria-invalid', 'true');
-        say('رقم الجوال غير مكتمل.', true);
+        say(EN ? 'The mobile number looks incomplete.' : 'رقم الجوال غير مكتمل.', true);
         return;
       }
       if (!CONFIG.whatsapp) {
-        say('استقبال الطلبات غير مفعّل بعد. تواصل معنا مباشرة.', true);
+        say(EN ? 'Requests are not enabled yet. Please contact us directly.' : 'استقبال الطلبات غير مفعّل بعد. تواصل معنا مباشرة.', true);
         return;
       }
-      var text = [
+      var text = EN ? [
+        'Hello, I would like to try Istiqdam360 free for 2 days.',
+        'Office: ' + f.office.value.trim(),
+        'Name: ' + f.name.value.trim(),
+        'Mobile: ' + f.phone.value.trim(),
+        f.city.value.trim() ? 'City: ' + f.city.value.trim() : '',
+        f.pain.value ? 'What hurts most: ' + f.pain.value : ''
+      ] : [
         'السلام عليكم، أرغب بتجربة استقدام360 يومين مجاناً.',
         'المكتب: ' + f.office.value.trim(),
         'الاسم: ' + f.name.value.trim(),
@@ -115,7 +124,7 @@
         f.city.value.trim() ? 'المدينة: ' + f.city.value.trim() : '',
         f.pain.value ? 'أكثر ما يتعبني: ' + f.pain.value : ''
       ].filter(Boolean).join('\n');
-      say('جارٍ فتح واتساب لإرسال طلبك.', false);
+      say(EN ? 'Opening WhatsApp to send your request.' : 'جارٍ فتح واتساب لإرسال طلبك.', false);
       window.open('https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(text), '_blank', 'noopener');
     });
   }
