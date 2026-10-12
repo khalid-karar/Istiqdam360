@@ -55,3 +55,6 @@
 @media (max-width:980px){.story.hero-shot{width:100%;margin-top:14px}}
 
 .vid{margin:28px 0 8px;max-width:860px}.vid video{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:16px;background:#0E182F;box-shadow:0 30px 60px -30px rgba(27,42,74,.45)}.vid .note{margin-top:10px}.vid a{color:inherit;text-decoration:underline}
+
+.brand-tag{position:absolute;right:28px;bottom:26px;z-index:8;background:#1B2A4A;border-radius:44px;padding:10px 26px;box-shadow:0 12px 28px -10px rgba(0,0,0,.55);display:flex;align-items:center;animation:none!important}
+.brand-tag img{display:block;height:46px;width:auto;opacity:1}
