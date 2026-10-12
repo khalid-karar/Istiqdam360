@@ -53,3 +53,5 @@
 }
 .story.hero-shot{width:calc(100% + clamp(0px,6vw,90px));margin-inline-end:0;justify-self:start}
 @media (max-width:980px){.story.hero-shot{width:100%;margin-top:14px}}
+
+.vid{margin:28px 0 8px;max-width:860px}.vid video{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:16px;background:#0E182F;box-shadow:0 30px 60px -30px rgba(27,42,74,.45)}.vid .note{margin-top:10px}.vid a{color:inherit;text-decoration:underline}
