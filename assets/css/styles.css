@@ -293,3 +293,7 @@ button,input{font:inherit}
   .step{animation:none;color:#fff}
   .chip{animation:none;opacity:1;transform:none}
 }
+
+.vat{font-size:.8em;opacity:.8}
+.legal-bar a,.facts a,.foot-facts a{color:inherit;text-decoration:none}
+.legal-bar a:hover,.facts a:hover,.foot-facts a:hover{text-decoration:underline}

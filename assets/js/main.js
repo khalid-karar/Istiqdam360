@@ -2,7 +2,7 @@
   'use strict';
 
   // ---- Settings: set the WhatsApp number (international format, digits only, e.g. 9665XXXXXXXX) ----
-  var CONFIG = { whatsapp: '' };
+  var CONFIG = { whatsapp: '966504779551' };
 
   // Mobile menu
   var toggle = document.querySelector('.nav-toggle');
