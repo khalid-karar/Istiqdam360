@@ -30,6 +30,7 @@
      "offers":{"@type":"Offer","price":"79000","priceCurrency":"SAR","priceSpecification":{"@type":"PriceSpecification","price":"79000","priceCurrency":"SAR","valueAddedTaxIncluded":false}}}
   ]}
   </script>
+<link rel="stylesheet" href="assets/css/story.css">
 </head>
 <body>
 <a class="skip" href="#main">انتقل إلى المحتوى</a>
@@ -78,16 +79,103 @@
       </div>
     </div>
 
-    <figure class="hero-shot">
-      <div class="frame frame-dark">
-        <div class="frame-bar"><i></i><i></i><i></i></div>
-        <img src="assets/img/dashboard.webp" alt="لوحة المتابعة في استقدام360: العقود والعمالة والمبالغ المحصّلة والمتبقية" width="1568" height="772">
+    <div class="story hero-shot" data-story role="img" aria-label="من إضافة العميل والعاملة والعقد إلى إشعار العميل بوصول العاملة، في عشر ثوانٍ.">
+      <div class="story-stage" aria-hidden="true">
+        <div class="scr">
+          <img class="f1" src="assets/story/s1-customer.webp" alt="">
+          <img class="f2" src="assets/story/s2-worker.webp" alt="">
+          <img class="f3" src="assets/story/s3-contract.webp" alt="">
+          <img class="f4" src="assets/story/s4-arrived.webp" alt="">
+          <div class="chips"><span class="c1"><b>١</b>أضف العميل</span><span class="c2"><b>٢</b>أضف العاملة</span><span class="c3"><b>٣</b>أنشئ العقد</span><span class="c4"><b>✓</b>وصلت العاملة</span></div>
+          <div class="prog"></div>
+        </div>
+        <div class="cafe">
+          <svg class="cafe-svg" viewBox="0 0 640 720" xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3EAD8"/><stop offset="1" stop-color="#E2D1B4"/></linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CBE8F4"/><stop offset="1" stop-color="#F4E7C2"/></linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9A6644"/><stop offset="1" stop-color="#7A4E33"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E7CB7A"/><stop offset="1" stop-color="#B8963E"/></linearGradient>
+    <radialGradient id="halo"><stop offset="0" stop-color="#D9B95F" stop-opacity=".75"/><stop offset="1" stop-color="#D9B95F" stop-opacity="0"/></radialGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#1B2A4A" flood-opacity=".28"/></filter>
+  </defs>
+  <rect width="640" height="720" fill="url(#wall)"/>
+  <!-- window -->
+  <path d="M40 330V190a90 90 0 0 1 180 0V330Z" fill="url(#sky)" stroke="#8B5A3A" stroke-width="9"/>
+  <circle cx="150" cy="170" r="30" fill="#FFF3C4" opacity=".9"/>
+  <path d="M130 330V100M40 235H220" stroke="#8B5A3A" stroke-width="5" opacity=".7"/>
+  <path d="M60 330c10-50 30-70 55-80-8 22-10 50-5 80ZM205 330c-10-40-30-60-52-68 6 22 6 46 2 68Z" fill="#6E8F6A" opacity=".85"/>
+  <!-- lamp -->
+  <path d="M480 0V96" stroke="#5B4636" stroke-width="3"/>
+  <path d="M440 132a40 36 0 0 1 80 0Z" fill="url(#gold)"/>
+  <ellipse cx="480" cy="136" rx="46" ry="10" fill="#FFF3C4" opacity=".55"/>
+  <!-- shelf plant -->
+  <rect x="520" y="330" width="100" height="9" rx="3" fill="#8B5A3A"/>
+  <path d="M548 330h44l-6 -34h-32Z" fill="#B9774F"/>
+  <path d="M570 296c-26-30-34-56-26-84 20 18 30 44 26 84ZM570 296c10-34 30-52 52-58-2 26-20 48-52 58ZM570 296c-6-38 2-66 18-92 8 30 2 62-18 92Z" fill="#5E8A5C"/>
+  <!-- man: body -->
+  <g id="man" transform="translate(-100 0)">
+    <path d="M200 580L212 440Q246 402 320 398Q394 402 428 440L440 580Z" fill="#F7F5EF" stroke="#D9D4C6" stroke-width="3"/>
+    <path d="M296 400L320 452L344 400Z" fill="#E7E2D5"/>
+    <path d="M320 452V540" stroke="#D9D4C6" stroke-width="3"/>
+    <circle cx="320" cy="478" r="3.5" fill="#CFC9B8"/><circle cx="320" cy="508" r="3.5" fill="#CFC9B8"/>
+    <rect x="300" y="360" width="40" height="46" rx="14" fill="#BF8A62"/>
+    <g class="head">
+      <ellipse cx="320" cy="314" rx="52" ry="62" fill="#C8956B"/>
+      <path d="M268 322Q270 392 320 398Q370 392 372 322Q362 358 320 360Q278 358 268 322Z" fill="#2B2220"/>
+      <path d="M298 346Q320 356 342 346" stroke="#2B2220" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <path d="M306 366Q320 376 334 366" stroke="#8C5B3F" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <ellipse cx="301" cy="312" rx="5" ry="6" fill="#1F1A18"/><ellipse cx="339" cy="312" rx="5" ry="6" fill="#1F1A18"/>
+      <path d="M290 296Q301 289 312 296M328 296Q339 289 350 296" stroke="#2B2220" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+      <path d="M320 318v22q-7 5-12 1" stroke="#A8744F" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <path d="M254 312Q246 222 320 212Q394 222 386 312L424 428Q398 448 374 404L372 304Q320 266 268 304L266 404Q242 448 216 428Z" fill="#FFFFFF" stroke="#DAD6CA" stroke-width="3"/>
+      <ellipse cx="320" cy="226" rx="64" ry="15" fill="none" stroke="#1B1B1B" stroke-width="8"/>
+      <ellipse cx="320" cy="244" rx="62" ry="13" fill="none" stroke="#1B1B1B" stroke-width="6"/>
+    </g>
+    <!-- resting left arm -->
+    <path d="M212 440Q196 500 204 552L246 552Q246 500 246 448Z" fill="#F7F5EF" stroke="#D9D4C6" stroke-width="3"/>
+    <ellipse cx="226" cy="560" rx="22" ry="13" fill="#C8956B"/>
+    <!-- reaching right arm -->
+    <g class="arm" style="transform-origin:425px 442px">
+      <path d="M408 440Q440 462 446 552L404 556Q398 500 392 452Z" fill="#F7F5EF" stroke="#D9D4C6" stroke-width="3"/>
+      <ellipse cx="428" cy="562" rx="22" ry="14" fill="#C8956B"/>
+    </g>
+  </g>
+  <!-- table -->
+  <rect x="30" y="545" width="580" height="30" rx="8" fill="url(#wood)"/>
+  <rect x="30" y="575" width="580" height="145" fill="#6C442D"/>
+  <!-- dallah and cups -->
+  <g transform="translate(70 0)">
+    <path d="M44 545l8-62h46l8 62Z" fill="url(#gold)"/>
+    <path d="M52 483q22-30 46 0Z" fill="#9C7A2E"/>
+    <path d="M62 449h26l-4 22H66Z" fill="#B8963E"/>
+    <path d="M100 505q34-20 44-58l4 4q-6 44-46 70Z" fill="#B8963E"/>
+    <path d="M44 505q-22 4-30 26" stroke="#B8963E" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M160 545q4-24 22-24t22 24Z" fill="#fff" stroke="#E2DACB" stroke-width="2"/>
+    <path d="M220 545q4-24 22-24t22 24Z" fill="#fff" stroke="#E2DACB" stroke-width="2"/>
+    <path class="steam" d="M182 508q-8-12 0-24t0-22" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" opacity=".7"/>
+  </g>
+  <!-- phone -->
+  <g transform="translate(-20 0)"><g class="phone" style="transform-origin:458px 538px">
+    <circle class="halo" cx="458" cy="488" r="110" fill="url(#halo)"/>
+    <rect x="428" y="436" width="60" height="104" rx="11" fill="#141B2E"/>
+    <rect x="433" y="443" width="50" height="90" rx="7" fill="#0A1020"/>
+    <g class="pscreen">
+      <rect x="433" y="443" width="50" height="90" rx="7" fill="#1B2A4A"/>
+      <rect x="438" y="458" width="40" height="22" rx="5" fill="#F2F5FA"/>
+      <rect x="442" y="464" width="22" height="3.5" rx="2" fill="#1B2A4A"/>
+      <rect x="442" y="471" width="30" height="3.5" rx="2" fill="#B8963E"/>
+    </g>
+  </g></g>
+  <!-- callout -->
+  <g class="callout" style="transform-origin:440px 392px"><g filter="url(#sh)"><path d="M314 224h302a18 18 0 0 1 18 18v132a18 18 0 0 1-18 18H470l-30 28-30-28H314a18 18 0 0 1-18-18V242a18 18 0 0 1 18-18Z" fill="#fff"/></g><circle cx="606" cy="254" r="15" fill="#1B2A4A"/><rect x="599" y="247" width="14" height="14" rx="3" fill="#D9B95F" transform="rotate(45 606 254)"/><text x="578" y="260" class="t-app" text-anchor="end">مكتب الاستقدام · الآن</text><text x="616" y="304" class="t-main" text-anchor="end">وصلت العاملة</text><text x="616" y="344" class="t-main" text-anchor="end">إلى المملكة</text><g transform="translate(594 356)"><circle cx="11" cy="11" r="11" fill="#1F7A55"/><path d="M6 11.5l3.6 3.6L16.5 8" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g><text x="588" y="374" class="t-sub" text-anchor="end">رسالة تلقائية من النظام</text></g>
+</svg>
+
+          <p class="cap" style="direction:rtl">عميلك يعرف قبل أن يسأل</p>
+        </div>
+        <div class="fade"></div>
       </div>
-      <figcaption class="chip" aria-live="polite">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#1F7A55"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>تم إشعار العميل: وصلت العاملة إلى المملكة</span>
-      </figcaption>
-    </figure>
+    </div>
   </div>
 
   <div class="wrap">

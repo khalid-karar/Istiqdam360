@@ -5,6 +5,16 @@
   var CONFIG = { whatsapp: '966504779551' };
   var EN = window.ISTIQDAM_LANG === 'en';
 
+
+  // Hero story: scale the fixed 1280x720 stage to its container
+  document.querySelectorAll('[data-story]').forEach(function (box) {
+    var stage = box.querySelector('.story-stage');
+    if (!stage) return;
+    function fit() { stage.style.transform = 'scale(' + (box.clientWidth / 1280) + ')'; }
+    fit();
+    if ('ResizeObserver' in window) new ResizeObserver(fit).observe(box); else window.addEventListener('resize', fit);
+  });
+
   // Mobile menu
   var toggle = document.querySelector('.nav-toggle');
   var menu = document.getElementById('menu');
