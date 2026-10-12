@@ -112,7 +112,8 @@
         'المكتب: ' + f.office.value.trim(),
         'الاسم: ' + f.name.value.trim(),
         'الجوال: ' + f.phone.value.trim(),
-        f.city.value.trim() ? 'المدينة: ' + f.city.value.trim() : ''
+        f.city.value.trim() ? 'المدينة: ' + f.city.value.trim() : '',
+        f.pain.value ? 'أكثر ما يتعبني: ' + f.pain.value : ''
       ].filter(Boolean).join('\n');
       say('جارٍ فتح واتساب لإرسال طلبك.', false);
       window.open('https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(text), '_blank', 'noopener');

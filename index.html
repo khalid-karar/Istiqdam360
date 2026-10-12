@@ -17,9 +17,28 @@
   <link rel="preload" href="assets/fonts/kufam-arabic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Organization","@id":"https://istiqdam360.com/#org","name":"شركة سهم الكرار","alternateName":"Alkarar Arrow","identifier":"7050745707",
+     "location":[{"@type":"Place","name":"الرياض","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"}},
+                 {"@type":"Place","name":"Headquarters","address":{"@type":"PostalAddress","addressLocality":"Alexandria","addressRegion":"VA","addressCountry":"US"}}]},
+    {"@type":"SoftwareApplication","name":"استقدام360","applicationCategory":"BusinessApplication","operatingSystem":"Web, iOS, Android","inLanguage":"ar",
+     "publisher":{"@id":"https://istiqdam360.com/#org"},
+     "offers":{"@type":"Offer","price":"79000","priceCurrency":"SAR"}}
+  ]}
+  </script>
 </head>
 <body>
 <a class="skip" href="#main">انتقل إلى المحتوى</a>
+
+<div class="legal-bar">
+  <div class="wrap legal-in">
+    <span>استقدام360 منتج <strong>شركة سهم الكرار</strong></span>
+    <span>سجل تجاري <bdi dir="ltr">7050745707</bdi></span>
+    <span class="hide-sm">الرياض، المملكة العربية السعودية</span>
+    <span class="hide-sm">Virginia، الولايات المتحدة</span>
+  </div>
+</div>
 
 <header class="nav" id="top">
   <div class="wrap nav-in">
@@ -214,6 +233,7 @@
       <div class="client-logo" data-client><img src="assets/clients/alayed.png" alt="شعار شركة العايد للاستقدام" data-client-img><b>العايد</b></div>
       <p class="client-name">شركة العايد للاستقدام</p>
       <p class="client-line">تدير عقودها وعمالتها بالنظام اليوم.</p>
+      <p class="client-line client-note">بُني النظام وجُرّب داخل مكتب استقدام يعمل فعلياً.</p>
     </aside>
   </div>
 </section>
@@ -226,6 +246,7 @@
       <div class="price">
         <p class="price-tag"><span class="num">79,000</span> <span class="cur">ريال</span></p>
         <p class="price-sub">ترخيص النظام، مرة واحدة</p>
+        <p class="frame-note">على مدى خمس سنوات: 79,000 + 4 × 10,000 = 119,000 ريال، أي أقل من 2,000 ريال في الشهر.</p>
         <ul class="ticks ticks-dark">
           <li>النظام كاملاً، جاهز للعمل في مكتبك</li>
           <li>تطبيق لعملاء مكتبك على iOS و Android</li>
@@ -258,6 +279,16 @@
         </ol>
 
         <form class="lead-form" id="leadForm" novalidate>
+          <label>ما أكثر ما يتعبك الآن؟
+            <select name="pain">
+              <option value="">اختر (اختياري)</option>
+              <option>متابعة حالات العاملات</option>
+              <option>العقود المنتهية والتنبيهات</option>
+              <option>المحاسبة والمبالغ المتبقية</option>
+              <option>نقل بياناتي من مساند</option>
+              <option>شيء آخر</option>
+            </select>
+          </label>
           <label>اسم المكتب<input name="office" autocomplete="organization" required></label>
           <label>اسمك<input name="name" autocomplete="name" required></label>
           <label>رقم الجوال<input name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" required></label>
@@ -267,6 +298,31 @@
         </form>
       </div>
     </div>
+
+    <ul class="assure">
+      <li><h3>تجربة بلا التزام</h3><p>يومان مجاناً، وإن لم يناسبك النظام فلا تدفع شيئاً.</p></li>
+      <li><h3>آخر دفعة بعد التشغيل</h3><p>30% فقط بعد 90 يوماً من عمل النظام في مكتبك.</p></li>
+      <li><h3>بياناتك ملكك</h3><p>تصدّر العمالة والعقود إلى Excel في أي وقت.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- COMPANY -->
+<section class="sec sec-paper" id="company">
+  <div class="wrap company">
+    <div>
+      <h2 class="h2">من يقف خلف استقدام360</h2>
+      <p class="lead">استقدام360 منتج تملكه شركة سهم الكرار. بُني وجُرّب داخل مكتب استقدام يعمل فعلياً، ثم طُوّر ليخدم مكاتب أخرى.</p>
+    </div>
+    <div>
+      <dl class="facts">
+        <div><dt>الجهة المالكة</dt><dd>شركة سهم الكرار <span class="en" dir="ltr">Alkarar Arrow</span></dd></div>
+        <div><dt>السجل التجاري</dt><dd><bdi dir="ltr">7050745707</bdi></dd></div>
+        <div><dt>المكتب في المملكة</dt><dd>الرياض، المملكة العربية السعودية</dd></div>
+        <div><dt>المقر الرئيسي</dt><dd><span dir="ltr">Alexandria, Virginia, USA</span></dd></div>
+      </dl>
+      <p class="note">يمكنك التحقق من السجل التجاري عبر وزارة التجارة.</p>
+    </div>
   </div>
 </section>
 
@@ -275,6 +331,9 @@
   <div class="wrap faq-wrap">
     <h2 class="h2">أسئلة يسألها أصحاب المكاتب</h2>
     <div class="faq">
+      <details><summary>من يملك استقدام360؟ وهل الشركة مسجلة؟</summary><p>يملكه شركة سهم الكرار، سجل تجاري 7050745707، ولها مكتب في الرياض ومقر رئيسي في ولاية فيرجينيا بالولايات المتحدة. يمكنك التحقق من السجل عبر وزارة التجارة.</p></details>
+      <details><summary>ماذا لو لم يعجبني النظام بعد التجربة؟</summary><p>لا تدفع شيئاً. التجربة مجانية وبلا التزام.</p></details>
+      <details><summary>هل آخذ بياناتي إذا غيّرت رأيي؟</summary><p>نعم. تصدّر العمالة والعقود إلى Excel في أي وقت، فبياناتك ملكك.</p></details>
       <details><summary>هل أحتاج إلى خادم خاص؟</summary><p>لا. السنة الأولى استضافة مجانية معنا. وإن أردت أن تبقى بياناتك على خادم مكتبك فنركّب النظام عليه.</p></details>
       <details><summary>كيف أنقل بياناتي من مساند؟</summary><p>تصدّر الملف من مساند وترفعه إلى النظام، فيستورده بضغطة واحدة.</p></details>
       <details><summary>هل يدعم الفاتورة الإلكترونية؟</summary><p>نربط النظام بهيئة الزكاة والضريبة والجمارك إذا رغبت في ذلك.</p></details>
@@ -301,9 +360,17 @@
 
 <footer class="foot">
   <div class="wrap foot-in">
-    <img src="assets/logo/lockup-dark.svg" alt="استقدام360" width="160" height="45">
-    <p>نظام إدارة مكاتب الاستقدام في المملكة العربية السعودية.</p>
-    <p class="copy">© 2026 استقدام360</p>
+    <div class="foot-brand">
+      <img src="assets/logo/lockup-dark.svg" alt="استقدام360" width="160" height="45">
+      <p>نظام إدارة مكاتب الاستقدام في المملكة العربية السعودية.</p>
+    </div>
+    <ul class="foot-facts">
+      <li>منتج شركة سهم الكرار (Alkarar Arrow)</li>
+      <li>سجل تجاري <bdi dir="ltr">7050745707</bdi></li>
+      <li>الرياض، المملكة العربية السعودية</li>
+      <li><span dir="ltr">Alexandria, Virginia, USA</span></li>
+    </ul>
+    <p class="copy">© 2026 شركة سهم الكرار. جميع الحقوق محفوظة.</p>
   </div>
 </footer>
 
