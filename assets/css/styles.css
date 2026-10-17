@@ -301,3 +301,15 @@ button,input{font:inherit}
 .pillars .pillar-asset{grid-column:1/-1;border-top:0;background:var(--navy);color:#fff;border-radius:16px;padding:28px clamp(22px,3vw,40px)}
 .pillars .pillar-asset h3{color:var(--gold-bright);font-size:1.45rem}
 .pillars .pillar-asset p{color:#D5DCEA;max-width:46em}
+
+/* WhatsApp */
+.wa-float{position:fixed;inset-inline-end:20px;bottom:20px;z-index:45;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35);transition:transform .2s}
+.wa-float:hover{transform:scale(1.07)}
+.btn-wa{background:#25D366;color:#0b2e17;gap:10px;border-color:transparent}
+.btn-wa svg path{fill:#0b2e17}
+.btn-wa:hover{background:#3ae07a}
+.final-btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.final-btns .btn{margin-top:0}
+.pillars{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.pillars{grid-template-columns:1fr}}
+@media (max-width:760px){.wa-float{bottom:84px;inset-inline-end:14px;width:54px;height:54px}}
